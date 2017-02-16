@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>CRMParameterBrowser</title>
+    <meta charset="utf-8" />
+    <script src="scripts/jquery_3.1.1.js"></script>
+    <script src="scripts/tabletop.js"></script>
+    <script src="scripts/parameterbrowser.js"></script>
+    <link href="styles/parameterbrowser.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+</head>
+<body onload="onLoad()">
+
+    <div id="container" class="container">
+
+        <div id="radioButtons" class="row">
+            <div class="section-title">Version</div>
+            <label class="radio-inline col-md-2 label"><input class="radio-input" type="radio" id="optCRM11" name="optCRM" onclick="loadData('2011');">CRM 2011</label>
+            <label class="radio-inline col-md-2 label"><input class="radio-input" type="radio" id="optCRM13" name="optCRM" onclick="loadData('2013');">CRM 2013</label>
+            <label class="radio-inline col-md-2 label"><input class="radio-input" type="radio" id="optCRM15" name="optCRM" onclick="loadData('2015');">CRM 2015</label>
+            <label class="radio-inline col-md-2 label"><input class="radio-input" type="radio" id="optCRM16" name="optCRM" onclick="loadData('2016');">CRM 2016</label>
+            <label class="radio-inline col-md-2 label"><input class="radio-input" type="radio" id="optCRM16" name="optCRM" disabled>Dynamics 365</label>
+        </div>
+
+        <div class="row">
+            <div class="section-title">Message</div>
+            <select class="col-md-3 label left-margin" name="ddlMessage" id="ddlMessage" onchange="loadParameters()"> </select>
+        </div>
+
+        <div class="row">
+            <div class="row">
+                <div class="col-md-6 section-title">Input Parameters</div>
+                <div class="col-md-6 section-title">Output Parameters</div>
+            </div>
+            <div class="row">
+                <div id="inputParameters" class="grid ">
+                    <ul class="list-group col-md-6">
+                        <li class="list-group-item left-margin-li"></li>
+                    </ul>
+                </div>
+
+                <div id="outputParameters" class="grid">
+                    <ul class="list-group col-md-6">
+                        <li class="list-group-item left-margin-li"></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="label-small">CRMParameterBrowser beta</div>
+        </div>
+
+        <img id="spinner" class="loading" src="images/progress.gif" />
+    </div>
+</body>
+</html>

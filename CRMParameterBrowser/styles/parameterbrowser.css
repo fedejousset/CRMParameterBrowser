@@ -1,0 +1,61 @@
+﻿.tag {
+    margin-left: 2px;
+}
+
+.section-title {
+    font-family: Segoe UI;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.label {
+    font-family: Segoe UI;
+    font-size: 12px;
+    margin-bottom: 0px;
+}
+
+.label-small {
+    font-family: Segoe UI;
+    font-size: 10px;
+    margin-top: 20px;
+    float:right;
+}
+
+.radio-input {
+    margin-right: 5px;
+}
+
+.left-margin {
+    margin-left: 15px;
+}
+
+.left-margin-li {
+    margin-left: 30px;
+}
+
+.grid {
+    font-family: Segoe UI;
+    font-size: 12px;
+}
+
+.loading {
+    display: none;
+    position: fixed;
+    top: 200px;
+    left: 50%;
+    /*margin-top: -96px;*/
+    /*margin-left: -96px;*/
+    /*background-color: #fcfcfc;*/
+    opacity: .85;
+    border-radius: 25px;
+    /*width: 192px;
+    height: 192px;*/
+    z-index: 99999;
+}
+
+body {
+    font-family: Segoe UI;
+    font-size: 12px;
+}
