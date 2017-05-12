@@ -57,6 +57,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="images\favicon.png" />
     <Content Include="images\progress.gif" />
     <Content Include="index.html" />
     <Content Include="scripts\jquery_3.1.1.js" />

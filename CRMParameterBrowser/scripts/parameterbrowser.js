@@ -2,8 +2,8 @@
 var data = null;
 
 function onLoad() {
-    $("#optCRM16").prop("checked", true);
-    loadData("2016");
+    $("#optD365").prop("checked", true);
+    loadData("D365");
 }
 
 function loadData(urlKey) {
@@ -19,13 +19,15 @@ function loadData(urlKey) {
 function getUrl(urlKey) {
     switch (urlKey) {
         case "2011":
-            return "https://docs.google.com/spreadsheets/d/1zVG6ZUUxlXI3eHi24IlVakFuKmquEZAFrWW2ZXX9h_8/pubhtml?gid=529045558&single=true";
+            return "https://docs.google.com/spreadsheets/d/1fSzDck3XSlSsqePVSklPHTeLOOmFt9Z88hF4C09mv1s/pubhtml?gid=2068515218&single=true";
         case "2013":
-            return "https://docs.google.com/spreadsheets/d/1zVG6ZUUxlXI3eHi24IlVakFuKmquEZAFrWW2ZXX9h_8/pubhtml?gid=870246102&single=true";
+            return "https://docs.google.com/spreadsheets/d/1oobnwwYVlXgM3Aplq7nhpTyEJbwFzUcK35JI5LwOjBQ/pubhtml?gid=388825950&single=true";
         case "2015":
-            return "https://docs.google.com/spreadsheets/d/1zVG6ZUUxlXI3eHi24IlVakFuKmquEZAFrWW2ZXX9h_8/pubhtml?gid=0&single=true";
+            return "https://docs.google.com/spreadsheets/d/1GiVsfCSnKtTFQ7M_hgwwJx5PaJyChDMtxw-x88wwA-8/pubhtml?gid=566960625&single=true";
         case "2016":
-            return "https://docs.google.com/spreadsheets/d/1zVG6ZUUxlXI3eHi24IlVakFuKmquEZAFrWW2ZXX9h_8/pubhtml?gid=338613996&single=true";
+            return "https://docs.google.com/spreadsheets/d/1dWwUnw6CD962LT1btvD6HSpv8kTV-nHgL68bUbeSKrk/pubhtml?gid=648840596&single=true";
+        case "D365":
+            return "https://docs.google.com/spreadsheets/d/1HdvvYyxY16L_F4Ob46swRuBHwBDl9yiVQzVthLcFTM4/pubhtml?gid=1550529689&single=true";
         default:
             return "";
     }
